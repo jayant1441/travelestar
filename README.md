@@ -1,22 +1,22 @@
-1	Adarsh Nagar	आदर्श नगर	 
+1	Adarsh Nagar	आदर्श नगर	 Yellow Line 	4 February 2009	Elevated	None		
 
-2	AIIMS	एम्स	 Yellow Line 	
+2	AIIMS	एम्स	 Yellow Line 	3 September 2010	Underground	None	[6][7]	
 
-3	Akshardham	अक्षरधाम	 
+3	Akshardham	अक्षरधाम	 Blue Line 	12 November 2009	Elevated	None		Side
 
-4	Anand Vihar ISBT**	आनंद विहार आई एस बी टी	 
+4	Anand Vihar ISBT**	आनंद विहार आई एस बी टी	 Blue Line branch 	6 January 2010	Elevated	Transfer station for Anand Vihar Railway Terminal (Indian Railways), Anand Vihar ISBT	[8][9]	Side
 
-5	 Pink Line 	
+5	Anand Vihar ISBT**	आनंद विहार आई एस बी टी	 Pink Line 	31 October 2018	Elevated	Transfer station for Anand Vihar Railway Terminal (Indian Railways), Anand Vihar ISBT	[8][9]	Side
 
-6	Arjan Garh	अर्जनगढ़	 
+6	Arjan Garh	अर्जनगढ़	 Yellow Line 	21 June 2010	Elevated	None		
 
-7	Arthala	अर्थला	
+7	Arthala	अर्थला	 Red Line 	8 March 2019	Elevated	None		
 
-8	Ashok Park Main*	अशोक पार्क मेन	
+8	Ashok Park Main*	अशोक पार्क मेन	 Green Line 	2 April 2010	Elevated	Transfer for Branch Line	[10]	
 
-9	Ashram	आश्रम	 
+9	Ashram	आश्रम	 Pink Line 	31 December 2018	Underground	None		
 
-10	Azadpur*	आजादपुर	 	
+10	Azadpur*	आजादपुर	 Yellow Line 	4 February 2009	Elevated	None	
 
 11	 Pink Line 	
 
@@ -530,5 +530,6 @@ Railways)	[36][37][38]
 
 252	Yamuna Bank*	यमुना बैंक	 Blue Line 	10 May 2009	At-Grade	None		
 
-
 253	 Blue Line branch 	6 January 2010	At-Grade
+
+
