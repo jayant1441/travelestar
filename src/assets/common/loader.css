@@ -1,0 +1,45 @@
+.loader-overlay {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.showbox {
+  line-height: 100vh;
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+}
+.loader-inner-svg {
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  animation: rotateZ 3s ease-in-out infinite forwards;
+}
+@keyframes rotateZ {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader-circle {
+  stroke: blue;
+  animation: stroke-anim 5s ease-in-out infinite forwards;
+  stroke-dasharray: 130;
+}
+@keyframes stroke-anim {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
