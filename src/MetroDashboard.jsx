@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import alanBtn from "@alan-ai/alan-sdk-web";
+import Helper from "./Helper";
 
 class MetroDashboard extends Component {
   state = {
@@ -9,7 +10,10 @@ class MetroDashboard extends Component {
     isLoaded: false,
     result: {},
     loader: false,
+    helpVisibility: false,
   };
+
+  alanBtnInstance = null;
 
   handleChange = (e) => {
     const name = e.target.name;
@@ -30,6 +34,23 @@ class MetroDashboard extends Component {
     this.alanBtnInstance = alanBtn({
       key:
         "f5d9afc01da393426fbe7c7f001e52272e956eca572e1d8b807a3e2338fdd0dc/stage",
+      onCommand: (commandData) => {
+        if (commandData.command === "searchIt") {
+          this.startDestination();
+        } else if (commandData.command === "initial") {
+          this.setState({ initial: commandData.data });
+          this.alanBtnInstance.playText(
+            "Please tell the final Metro station to continue"
+          );
+        } else if (commandData.command === "final") {
+          this.setState({ final: commandData.data });
+        } else if (commandData.command === "both") {
+          this.setState({
+            final: commandData.final,
+            initial: commandData.initial,
+          });
+        }
+      },
     });
   };
 
@@ -60,9 +81,14 @@ class MetroDashboard extends Component {
             </div>
           </div>
         ) : null}
+        {this.state.helpVisibility ? (
+          <Helper
+            closeHelper={() => this.setState({ helpVisibility: false })}
+          />
+        ) : null}
         <div className="container m-1">
           <h1>Delhi Metro Direction</h1>
-          <div className="card m-1">
+          <div className="card m-1" id="card">
             <h4>
               Either type the metro station name or use the Voice button to
               reach the destination
@@ -129,6 +155,14 @@ class MetroDashboard extends Component {
               </div>
             </div>
           ) : null}
+          <div
+            className="m-1 helper-cursor"
+            onClick={() => {
+              this.setState({ helpVisibility: true });
+            }}
+          >
+            Need Help?
+          </div>
         </div>
       </>
     );
