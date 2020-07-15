@@ -31,15 +31,6 @@ class MetroDashboard extends Component {
       key:
         "f5d9afc01da393426fbe7c7f001e52272e956eca572e1d8b807a3e2338fdd0dc/stage",
     });
-    // setTimeout(() => {
-    //   this.setState({ initial: "Dwarka" });
-    // }, 1000);
-    // setTimeout(() => {
-    //   this.setState({ final: "Palam" });
-    // }, 2000);
-    // setTimeout(() => {
-    //   this.startDestination();
-    // }, 3000);
   };
 
   render() {
