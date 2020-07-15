@@ -26,7 +26,19 @@ class MetroDashboard extends Component {
     axios({
       url: `https://delhimetroapi.herokuapp.com/metroapi/from=${this.state.initial}&to=${this.state.final}`,
     }).then((data) => {
-      this.setState({ result: data.data, isLoaded: true, loader: false });
+      const response = data.data;
+      this.alanBtnInstance.playText(
+        `You will start from ${this.state.initial} station to ${
+          this.state.final
+        } and it will take a total of ${parseInt(
+          response.time
+        )} minutes. You have ${
+          response.interchange.length
+        } interchange from ${response.interchange.toString()}. There are a total of ${
+          response.path.length
+        } stations in between as listed.`
+      );
+      this.setState({ result: response, isLoaded: true, loader: false });
     });
   };
 
@@ -35,6 +47,7 @@ class MetroDashboard extends Component {
       key:
         "f5d9afc01da393426fbe7c7f001e52272e956eca572e1d8b807a3e2338fdd0dc/stage",
       onCommand: (commandData) => {
+        console.log(commandData);
         if (commandData.command === "searchIt") {
           this.startDestination();
         } else if (commandData.command === "initial") {

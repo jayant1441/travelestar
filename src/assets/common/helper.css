@@ -17,7 +17,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.how-to-start {
+  max-height: 70vh;
+  overflow-y: auto;
+}
 .helper-container-inner {
   min-width: 80vw;
-  min-height: 80vh;
 }
