@@ -27,6 +27,7 @@ class MetroDashboard extends Component {
       url: `https://delhimetroapi.herokuapp.com/metroapi/from=${this.state.initial}&to=${this.state.final}`,
     }).then((data) => {
       const response = data.data;
+      console.log(data.data);
       this.alanBtnInstance.playText(
         `You will start from ${this.state.initial} station to ${
           this.state.final
