@@ -46,7 +46,7 @@ class MetroDashboard extends Component {
   componentDidMount = () => {
     this.alanBtnInstance = alanBtn({
       key:
-        "<ALAN_KEY>",
+        "ALAN_API_KEY",
       onCommand: (commandData) => {
         console.log(commandData);
         if (commandData.command === "searchIt") {
