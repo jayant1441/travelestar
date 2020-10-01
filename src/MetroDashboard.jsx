@@ -27,6 +27,7 @@ class MetroDashboard extends Component {
       url: `https://delhimetroapi.herokuapp.com/metroapi/from=${this.state.initial}&to=${this.state.final}`,
     }).then((data) => {
       const response = data.data;
+      console.log(data.data);
       this.alanBtnInstance.playText(
         `You will start from ${this.state.initial} station to ${
           this.state.final
@@ -45,7 +46,7 @@ class MetroDashboard extends Component {
   componentDidMount = () => {
     this.alanBtnInstance = alanBtn({
       key:
-        "f5d9afc01da393426fbe7c7f001e52272e956eca572e1d8b807a3e2338fdd0dc/stage",
+        "<ALAN_KEY>",
       onCommand: (commandData) => {
         console.log(commandData);
         if (commandData.command === "searchIt") {
