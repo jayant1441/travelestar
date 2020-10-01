@@ -70,11 +70,6 @@ class Helper extends Component {
               <a href="https://github.com/raghavdhingra/Delhi-Metro-Map-API">
                 https://github.com/raghavdhingra/Delhi-Metro-Map-API
               </a>
-              <br />
-              <p>
-                I, along with my partner, Jayant Dhingra, made this project for
-                the Alan AI hackathon, 2020.
-              </p>
             </div>
           </div>
         </div>
