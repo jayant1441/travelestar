@@ -8,7 +8,7 @@
 
 5	Anand Vihar ISBT**	आनंद विहार आई एस बी टी	 Pink Line 	31 October 2018	Elevated	Transfer station for Anand Vihar Railway Terminal (Indian Railways), Anand Vihar ISBT	[8][9]	Side
 
-6	Arjan Garh	अर्जनगढ़	 Yellow Line 	21 June 2010	Elevated	None		
+6	Arjan Garh	अर्जनगढ़	 Yellow Line 	21 June 2010	chutiyaap	
 
 7	Arthala	अर्थला	 Red Line 	8 March 2019	Elevated	None		
 
